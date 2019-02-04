@@ -23,13 +23,6 @@ import { WebSitePipe } from '../pipes/web-site/web-site';
 <h2>{{title|imgUrl}}</h2>
 ```
 
-### 使用管道的时候不能在绑定数据的中括号'[]'里面写管道, 在这里写管道他的作用域和组件作用域不同, 会出问题
-```html
-<!-- bad -->
-<h2 [innerHTML]="title|imgUrl"></h2>
-<!-- good -->
-<h2>{{title|imgUrl}}</h2>
-```
 
 ### 懒加载页面使用管道
 
